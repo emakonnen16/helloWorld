@@ -4,13 +4,13 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World from Endalk! I am adding my first code project'
-#helloo
+def about_me():  # put application's code here
+    return 'Hello from Endalk! This leads to my about page.'
+#app
 
-@app.route('/hello')
-def hello():  # put application's code here
-    return render_template('hello.html')
+@app.route('/about')
+def about():  # put application's code here
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run()
