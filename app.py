@@ -10,15 +10,13 @@ def hello_world():  # put application's code here
 def about_me():  # put application's code here
     return render_template('about.html')
 
-@app.route('/hello')
-def hello():  # put application's code here
-    return render_template('hello.html')
-
-@app.route('/favorite-course', methods=['GET','POST'])
+@app.route('/favorite_course')
 def favorite_course():  # put application's code here
-    if request.method == "POST":
-        print('You entered your favorite course as: ' + request.form.get('department') + request.form.get('course_no'))
-    return render_template('favorite-course.html')
+    return render_template('favCourse.html')
+
+@app.route('/favorite_courses')
+def favorite_courses():  # put application's code here
+    return render_template('favorite_course.html')
 
 if __name__ == '__main__':
     app.run()
