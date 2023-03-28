@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return 'Hello BMGT407 from Endalk! This is my about page'
+    return 'Hello BMGT407 from Endalk! This is my about page (Updated to Module 8)'
 
 @app.route('/about')
 def about_me():  # put application's code here
