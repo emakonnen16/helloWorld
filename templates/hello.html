@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    {%  block page_title %} Hello to this webpage! {% endblock %}
 </head>
 <body>
-Hello World from Endalk Makonnen! This is my first HTML page.
+
+{%  block page_title %} Hello to this webpage! {% endblock %}
+{%  block page_head %} hELLO
+
 </body>
 </html>
+
+{%  extends 'base.html' %}
+{%  block page_title %} Hello to this webpage! {% endblock %}
+{%  block page_content %}
+<p> You entered your favorite course as: {% courses %}  </p>
+{% e %}
