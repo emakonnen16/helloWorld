@@ -1,8 +1,8 @@
 {%  extends 'base.html' %}
 
-{%  block page_title %} Your Favorite Course {% endblock %}
+{%  block title %} Your Favorite Course {% endblock title %}
 
-{%  block page_head %} <p style="color: white; font-family:gill sans; font-weight:lighter;"> <u> Greetings </u> </p>{% endblock %}
+{%  block head %} <p style="color: white; font-family:gill sans; font-weight:lighter;"> <u> Greetings </u> </p>{% endblock head %}
 
 
-{%  block page_content %} style="background-color:lightcoral;"> <p style="color: white; font-family:gill sans; font-weight:lighter;"> You entered your favorite course as: {{  courses }} </p> {% endblock %}
+{%  block body %} <p> <style> body{background-color:lightcoral;} p{color: white; font-family:gill sans; font-weight:lighter;} </style> You entered your favorite course as: {{  courses }} </style> </p> {% endblock body %}
